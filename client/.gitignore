@@ -5,6 +5,10 @@
 /.pnp
 .pnp.js
 
+# DO NOT commit the environment variables file or the constants folder
+.env
+/src/Constants
+
 # testing
 /coverage
 
