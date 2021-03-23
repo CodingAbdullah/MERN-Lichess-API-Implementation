@@ -30,7 +30,7 @@ class Profile extends Component {
             
             // Populate fields with corresponding values
             this.setState({ accountUserName: username, firstName : profile.firstName,
-            lastName: profile.lastName, games: perfs, stats: count, status: online});
+            lastName: profile.lastName, games: perfs, stats: count, status: online });
         })
         .catch(err => {
             console.log("There was an error fetching data " + err);
@@ -41,7 +41,7 @@ class Profile extends Component {
     render = () => {
         return (
             <div className="profile">
-                <Title name={this.state.accountUserName} />
+                <Title name={ this.state.accountUserName } />
                 <Stats firstName={this.state.firstName} lastName={this.state.lastName} games={this.state.games} stats={this.state.stats} status={this.state.status} />
             </div>
         )
